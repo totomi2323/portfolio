@@ -1,0 +1,73 @@
+body {
+    margin: 0 150px;
+}
+
+html {
+    background-image: url("pexels-karolina-grabowska-4194850.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    margin: 0;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.picture-container {
+    position: relative;
+}
+.me { 
+    width:300px;
+    box-shadow: 3px 3px gray;
+    border-radius: 10px;
+}
+.name {
+    position:absolute;
+    top: 300px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    height: 0px;
+}
+.about {
+    position: relative;
+    border: 1px solid black;
+    border-left: none;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(243, 240, 240);
+    border-radius: 0 20px 20px 0;
+
+}
+.links { 
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    right: 30px;
+    justify-content: space-between;
+}
+.link-image {  
+    width: 40px;
+    margin-left: 30px;
+}
+main{ 
+    background-color: rgb(243, 240, 240);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:  2px 2px grey;
+}
+.projects {
+    margin:0;
+    height:600px;
+    background-color: green;
+}
+.list-skills { 
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(80px 1fr));
+    grid-auto-flow: column;
+}
+
+
+
