@@ -40,6 +40,7 @@ html {
   display: flex;
   background-color: rgb(243, 240, 240);
   border-radius: 0 20px 20px 0;
+  font-size: 24px;
 }
 .links {
   display: flex;
@@ -49,7 +50,7 @@ html {
   justify-content: space-between;
 }
 .link-image {
-  width: 40px;
+  width: 2em;
   margin-left: 30px;
 }
 main {
@@ -85,44 +86,92 @@ main {
   margin: 12px 0;
   border-radius: 10px;
 }
- .moveFromLeft {
-    animation: 2s moveFromLeft ease-in alternate;
- }
- .moveFromRight {
-    animation: 2s moveFromRight ease-in alternate;
- }
+.moveFromLeft {
+  animation: 2s moveFromLeft ease-in alternate;
+}
+.moveFromRight {
+  animation: 2s moveFromRight ease-in alternate;
+}
 
 .project-picture {
   width: 400px;
   margin-right: 32px;
   border: 1px solid black;
 }
-.contact-me { 
-    font-size: 30px;
+.contact-me {
+  font-size: 30px;
 }
 .contact-icon {
-    width: 2em;
-    margin-right: 2em;
+  width: 2em;
+  margin-right: 2em;
 }
-.contact-info { 
-    display: flex;
+.contact-info {
+  display: flex;
 }
-footer{
+footer {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  background-color: rgb(103, 103, 103);
+  border: 1px solid black;
+  margin-top: 48px;
+  border-radius: 20px 20px 0 0;
+  color: white;
+  padding: 20px 0;
+  flex-direction: column;
+}
+.contact-box {
     display: flex;
+    justify-content:space-around;
+    width: 100%;
+}
+@media (max-width: 900px) {
+  body {
+    margin: 0px;
+  }
+  .head {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    font-size: 18px;
-    background-color: rgb(103, 103, 103);
+  }
+  .project {
+    flex-direction: column;
+    align-content: center;
+  }
+  .moveFromLeft,
+  .moveFromRight {
+    animation: none;
+  }
+  footer {
+    padding: 1em;
+    font-size: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project-picture {
+    width: 95%;
+    margin:0;
+  }
+  .list-skills{
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  .skill-icon{ 
+    margin: 0.5em 1em;
+  }
+  .about{
     border: 1px solid black;
-    margin-top: 48px;
-    border-radius: 20px 20px 0 0;
-    color: white;
-    padding: 20px 0;
+    font-size: 20px;
+    border-radius: 16px;
+    flex-direction: column;
+  }
+  .links{
+    position:inherit;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
 }
-
-
-
-
 
 
 @keyframes moveFromLeft {
@@ -136,15 +185,13 @@ footer{
   }
 }
 
-
-@keyframes moveFromRight{
-    from {
-      transform: translateX(800px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0px);
-      opacity: 1;
-    }
+@keyframes moveFromRight {
+  from {
+    transform: translateX(800px);
+    opacity: 0;
   }
-  
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
