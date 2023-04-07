@@ -42,6 +42,9 @@ html {
   border-radius: 0 20px 20px 0;
   font-size: 24px;
 }
+.personal {
+  padding: 12px;
+}
 .links {
   display: flex;
   position: absolute;
